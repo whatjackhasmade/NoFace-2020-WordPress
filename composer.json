@@ -51,6 +51,8 @@
 		"roots/wp-password-bcrypt": "1.0.0",
 		"advanced-custom-fields/advanced-custom-fields-pro": "^5.8",
 		"wpackagist-plugin/amazon-s3-and-cloudfront": "^2.1.0",
+		"wpackagist-plugin/atomic-blocks": "^2.1.0",
+		"wpackagist-plugin/coblocks": "^1.14.0",
 		"wpackagist-plugin/duplicate-post": "^3.2.2",
 		"wpackagist-plugin/regenerate-thumbnails": "^3.1.0",
 		"wpackagist-plugin/timber-library": "^1.9",
@@ -78,7 +80,9 @@
 				"wpackagist-plugin/wp-jamstack-deployments"
 			],
 			"web/app/plugins/{$name}/": [
-				"type:wordpress-plugin"
+				"type:wordpress-plugin",
+				"wpackagist-plugin/atomic-blocks",
+				"wpackagist-plugin/coblocks"
 			],
 			"web/app/themes/{$name}/": [
 				"type:wordpress-theme"
